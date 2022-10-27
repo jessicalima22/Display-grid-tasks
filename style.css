@@ -14,8 +14,10 @@ body {
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18.5rem, 1fr));
-    gap: 8%;
+    gap: 2%;
 }
+
+/* Profile */
 
 .profile {
     background-color: hsl(235, 46%, 20%);
@@ -25,7 +27,8 @@ main {
     margin: auto;
     font-weight: 400;
     font-size: 0.9rem;
-    border-radius: 1rem;  
+    border-radius: 1rem;
+    margin-top: 2rem;  
 }
 
 .profile img {
@@ -67,9 +70,9 @@ main {
     padding: 1.5rem;
 }
 
-.work {
-    background-color: hsl(15, 100%, 70%);
-    background-image: url(images/icon-work.svg);
+/*Sections, general*/
+
+.sections{
     background-repeat: no-repeat;
     background-size: 25%;
     background-position: 92% -15%;
@@ -85,7 +88,7 @@ main {
     margin: auto;
 }
 
-.divWork {
+.divSection {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -95,7 +98,7 @@ main {
     padding: 1.2rem;
 }
 
-.divWork img{
+.divSection img{
     width: min-content;
     margin-top: 1rem;
     margin-left: 9rem;
@@ -120,3 +123,39 @@ h3 {
     margin-left: 3.6rem;
     margin-top: 1.5rem;
 }
+
+/* Sections, specific changes*/
+
+.work {
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(images/icon-work.svg);
+}
+
+.play {
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(images/icon-play.svg);
+}
+
+.study {
+    background-color: hsl(348, 100%, 68%);
+    background-image: url(images/icon-study.svg);
+}
+
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(images/icon-exercise.svg);
+    background-position: 92% -2%;
+}
+
+.social {
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(images/icon-social.svg);
+}
+
+.selfCare {
+    background-color: hsl(43, 84%, 65%);
+    background-image: url(images/icon-self-care.svg);
+    background-size: 22%;
+}
+
+
