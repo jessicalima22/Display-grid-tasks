@@ -14,7 +14,7 @@ body {
 main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18.5rem, 1fr));
-    
+    gap: 8%;
 }
 
 .profile {
@@ -67,3 +67,56 @@ main {
     padding: 1.5rem;
 }
 
+.work {
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 92% -15%;
+    width: 100%;
+    max-width: 18.5rem; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: flex-end;
+    border-radius: 1rem;
+    height: 9.3rem;
+    margin: auto;
+}
+
+.divWork {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 1rem;
+    height: 75%;
+    padding: 1.2rem;
+}
+
+.divWork img{
+    width: min-content;
+    margin-top: 1rem;
+    margin-left: 9rem;
+}
+
+h1 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+h3 {
+    color: hsl(236, 100%, 87%); 
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-left: 3.6rem;
+    margin-top: 1.5rem;
+}
