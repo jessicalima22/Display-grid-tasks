@@ -16,6 +16,7 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(18.5rem, 1fr));
     gap: 2%;
     padding: 1rem;
+    justify-items: center;
 }
 
 /* Profile */
@@ -53,6 +54,7 @@ main {
     color: white;
     font-size: 1.4rem;
     font-weight: 300;
+    display: inline-block;
 }
 
 .frequency {
@@ -85,7 +87,7 @@ main {
     justify-content: flex-end;
     border-radius: 1rem;
     height: 9.3rem;
-    margin: auto;
+    
 }
 
 .divSection {
@@ -162,4 +164,84 @@ h3 {
     color: white;
 }
 
+/* grid areas*/
 
+
+.profile {
+    grid-area: profile;
+}
+
+.work {
+    grid-area: work;
+    align-self: flex-start;
+}
+
+.play {
+    grid-area: play;
+}
+
+.study{
+    grid-area: study;
+}
+
+.exercise{
+    grid-area: exercise;
+}
+
+.social{
+    grid-area: social;
+}
+
+.selfCare {
+    grid-area: selfCare;
+}
+
+.attribution {
+    grid-area: foot;
+}
+
+@media (min-width: 1439px) {
+    body {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+    }
+
+    main {
+        gap: 2.7%;
+        justify-content: center;
+        grid-template-columns: 
+        1fr repeat(4, minmax(16rem, 16rem)) 1fr;
+        grid-template-areas: 
+        ". profile work play study ."
+        ". profile exercise social selfCare ."
+        ". foot foot foot foot ."
+    }
+
+
+    .name {
+        flex-direction: column;
+        padding: 2rem; 
+    }
+
+    .profile img {
+        margin-bottom: 2rem ;
+        width: 5rem;
+    }
+
+    .profile span {
+        font-size: 2.4rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .frequency {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.2rem;
+    }
+
+    .frequency p {
+        padding: 0.6rem 1rem;
+    }
+}
