@@ -178,25 +178,32 @@ h3 {
 }
 
 
-
-
-@media (min-width: 1439px) {
-    
-    
+@media (min-width: 636px) {
     body {
         display: grid;
         justify-content: center;
-        align-content: center;
-        
-        
     }
+
+    main {
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 1000px) {
+    
+    body {
+        justify-content: center;
+        align-content: center;
+    }
+  
 
     main {
         gap: 2rem 1.8rem;
         justify-content: center;
         align-items: flex-start;
         grid-template-columns: 
-        1fr repeat(4, minmax(16rem, 16rem)) 1fr;
+        1fr repeat(4, minmax(10rem, 16rem)) 1fr;
         grid-template-areas: 
         ". profile work play study ."
         ". profile exercise social selfCare ."
@@ -266,33 +273,41 @@ h3 {
 
     .sections {
         height: 15rem;
+        
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        order: 1;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+        margin-top: 1.2rem;
+        order: 3;
+    }
+
+    h3 {
+        font-size: 1rem;
+        margin-left: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        order: 4;
+    }
+
+    .divSection img {
+        order: 2;
+        margin-left: 2rem;
+        justify-content: end;
+        margin-top: 0.5rem;
+        height: min-content;
+        margin-right: 1rem;
     }
 
     .divSection {
         height: 80%;
-        padding: 1.3rem 0 0 2rem;
-   }
-
-   h1 {
-    font-size: 1.2rem;
-   }
-
-   h2 {
-    font-size: 3.5rem;
-    margin-top: 1.2rem;
-   }
-
-   h3 {
-    font-size: 1rem;
-    margin-left: 0;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-   }
-
-   .divSection img {
-    order: 2;
-    margin-left: 0;
-    
-
-   }
+        padding: 1.3rem 1rem 0 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
