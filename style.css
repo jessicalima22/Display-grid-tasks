@@ -77,6 +77,10 @@ main {
     cursor: pointer;
 }
 
+#daily {
+    color: white;
+}
+
 /*Sections, general*/
 
 .sections{
@@ -90,7 +94,7 @@ main {
     flex-wrap: wrap;
     color: white;
     justify-content: flex-end;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 1.2rem 1.2rem;
     height: 9.3rem;
     
 }
@@ -175,6 +179,7 @@ h3 {
 
 .attribution {
     color: white;
+    padding-bottom: 1rem;
 }
 
 
